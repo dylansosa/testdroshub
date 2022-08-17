@@ -1,0 +1,5 @@
+hub myHub
+shortLabel my hub
+longLabel my hub
+genomesFile genomes.txt
+email NoEmail

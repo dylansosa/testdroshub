@@ -1,0 +1,7 @@
+0 drosophilaSpecies.hal
+2007 lod/drosophilaSpecies_lod_23.hal
+5129 lod/drosophilaSpecies_lod_58.hal
+12934 lod/drosophilaSpecies_lod_147.hal
+32781 lod/drosophilaSpecies_lod_368.hal
+82064 lod/drosophilaSpecies_lod_920.hal
+205160 max

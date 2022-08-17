@@ -1,0 +1,397 @@
+track hubCentral
+compositeTrack on
+shortLabel my hub
+longLabel my hub
+group comphub
+subGroup1 view Track_Type Snake=Alignments genomeAnnotationBed=genomeAnnotationBed tRNA_genes=tRNA_genes 
+subGroup2 orgs Organisms Anc00=Anc00 Sleb=Sleb 27=27 15=15 16=16 Dmoj=Dmoj Dhyd=Dhyd 19=19 Dnov=Dnov Dvir=Dvir 28=28 Dwil=Dwil 29=29 7=7 8=8 13=13 Dsim=Dsim Dmel=Dmel 9=9 11=11 Dore=Dore Dere=Dere Dyak=Dyak Dana=Dana 31=31 32=32 Dpse=Dpse Dper=Dper Dazt=Dazt
+dragAndDrop subTracks
+#allButtonPair on
+dimensions dimensionX=view dimensionY=orgs
+noInherit on
+priority 0
+centerLabelsDense on
+visibility full
+html ../documentation/hubCentral
+type bigBed 3
+
+	track hubCentralgenomeAnnotationBed
+	shortLabel genomeAnnotationBed
+	view genomeAnnotationBed
+	visibility dense
+	subTrack hubCentral
+
+		track genomeAnnotationBedDmel
+		longLabel Dmel genomeAnnotationBed
+		priority 1
+		type bigBed 6 .
+		group annotationgenomeAnnotationBed
+		searchIndex name
+		itemRgb On
+		visibility dense
+		shortLabel DmelgenomeAnnotationBed
+		bigDataUrl ../liftoverbed/genomeAnnotationBed/Dmel/Dmel.bb
+		parent hubCentralgenomeAnnotationBed
+		subGroups view=genomeAnnotationBed orgs=Dmel
+
+	track hubCentraltRNA_genes
+	shortLabel tRNA_genes
+	view tRNA_genes
+	visibility dense
+	subTrack hubCentral
+
+		track tRNA_genesDmel
+		longLabel Dmel tRNA_genes
+		priority 1
+		type bigBed 12 .
+		group annotationtRNA_genes
+		searchIndex name
+		itemRgb On
+		visibility dense
+		shortLabel DmeltRNA_genes
+		bigDataUrl ../liftoverbed/tRNA_genes/Dmel/Dmel.bb
+		parent hubCentraltRNA_genes
+		subGroups view=tRNA_genes orgs=Dmel
+
+	track hubCentralAlignments
+	shortLabel Alignments
+	view Alignments
+	visibility full
+	subTrack hubCentral
+
+		track snakeAnc00
+		longLabel Anc00
+		shortLabel Anc00
+		otherSpecies Anc00
+		visibility hide
+		parent hubCentralAlignments off
+		priority 2
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Anc00
+
+		track snakeSleb
+		longLabel Sleb
+		shortLabel Sleb
+		otherSpecies Sleb
+		visibility hide
+		parent hubCentralAlignments off
+		priority 3
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Sleb
+
+		track snake27
+		longLabel 27
+		shortLabel 27
+		otherSpecies 27
+		visibility hide
+		parent hubCentralAlignments off
+		priority 4
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=27
+
+		track snake15
+		longLabel 15
+		shortLabel 15
+		otherSpecies 15
+		visibility hide
+		parent hubCentralAlignments off
+		priority 5
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=15
+
+		track snake16
+		longLabel 16
+		shortLabel 16
+		otherSpecies 16
+		visibility hide
+		parent hubCentralAlignments off
+		priority 6
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=16
+
+		track snakeDmoj
+		longLabel Dmoj
+		shortLabel Dmoj
+		otherSpecies Dmoj
+		visibility hide
+		parent hubCentralAlignments off
+		priority 7
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dmoj
+
+		track snakeDhyd
+		longLabel Dhyd
+		shortLabel Dhyd
+		otherSpecies Dhyd
+		visibility hide
+		parent hubCentralAlignments off
+		priority 8
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dhyd
+
+		track snake19
+		longLabel 19
+		shortLabel 19
+		otherSpecies 19
+		visibility hide
+		parent hubCentralAlignments off
+		priority 9
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=19
+
+		track snakeDnov
+		longLabel Dnov
+		shortLabel Dnov
+		otherSpecies Dnov
+		visibility hide
+		parent hubCentralAlignments off
+		priority 10
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dnov
+
+		track snakeDvir
+		longLabel Dvir
+		shortLabel Dvir
+		otherSpecies Dvir
+		visibility hide
+		parent hubCentralAlignments off
+		priority 11
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dvir
+
+		track snake28
+		longLabel 28
+		shortLabel 28
+		otherSpecies 28
+		visibility hide
+		parent hubCentralAlignments off
+		priority 12
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=28
+
+		track snakeDwil
+		longLabel Dwil
+		shortLabel Dwil
+		otherSpecies Dwil
+		visibility full
+		parent hubCentralAlignments
+		priority 13
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dwil
+
+		track snake29
+		longLabel 29
+		shortLabel 29
+		otherSpecies 29
+		visibility hide
+		parent hubCentralAlignments off
+		priority 14
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=29
+
+		track snake7
+		longLabel 7
+		shortLabel 7
+		otherSpecies 7
+		visibility hide
+		parent hubCentralAlignments off
+		priority 15
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=7
+
+		track snake8
+		longLabel 8
+		shortLabel 8
+		otherSpecies 8
+		visibility hide
+		parent hubCentralAlignments off
+		priority 16
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=8
+
+		track snake13
+		longLabel 13
+		shortLabel 13
+		otherSpecies 13
+		visibility hide
+		parent hubCentralAlignments off
+		priority 17
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=13
+
+		track snakeDsim
+		longLabel Dsim
+		shortLabel Dsim
+		otherSpecies Dsim
+		visibility full
+		parent hubCentralAlignments
+		priority 18
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dsim
+
+		track snake9
+		longLabel 9
+		shortLabel 9
+		otherSpecies 9
+		visibility hide
+		parent hubCentralAlignments off
+		priority 20
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=9
+
+		track snake11
+		longLabel 11
+		shortLabel 11
+		otherSpecies 11
+		visibility hide
+		parent hubCentralAlignments off
+		priority 21
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=11
+
+		track snakeDore
+		longLabel Dore
+		shortLabel Dore
+		otherSpecies Dore
+		visibility full
+		parent hubCentralAlignments
+		priority 22
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dore
+
+		track snakeDere
+		longLabel Dere
+		shortLabel Dere
+		otherSpecies Dere
+		visibility hide
+		parent hubCentralAlignments off
+		priority 23
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dere
+
+		track snakeDyak
+		longLabel Dyak
+		shortLabel Dyak
+		otherSpecies Dyak
+		visibility full
+		parent hubCentralAlignments
+		priority 24
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dyak
+
+		track snakeDana
+		longLabel Dana
+		shortLabel Dana
+		otherSpecies Dana
+		visibility hide
+		parent hubCentralAlignments off
+		priority 25
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dana
+
+		track snake31
+		longLabel 31
+		shortLabel 31
+		otherSpecies 31
+		visibility hide
+		parent hubCentralAlignments off
+		priority 26
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=31
+
+		track snake32
+		longLabel 32
+		shortLabel 32
+		otherSpecies 32
+		visibility hide
+		parent hubCentralAlignments off
+		priority 27
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=32
+
+		track snakeDpse
+		longLabel Dpse
+		shortLabel Dpse
+		otherSpecies Dpse
+		visibility hide
+		parent hubCentralAlignments off
+		priority 28
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dpse
+
+		track snakeDper
+		longLabel Dper
+		shortLabel Dper
+		otherSpecies Dper
+		visibility hide
+		parent hubCentralAlignments off
+		priority 29
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dper
+
+		track snakeDazt
+		longLabel Dazt
+		shortLabel Dazt
+		otherSpecies Dazt
+		visibility hide
+		parent hubCentralAlignments off
+		priority 30
+		bigDataUrl ../drosophilaSpecies.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Dazt
+
